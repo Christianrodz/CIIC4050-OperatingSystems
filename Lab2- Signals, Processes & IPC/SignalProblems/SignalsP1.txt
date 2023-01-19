@@ -1,0 +1,12 @@
+Write a function that will setup the current process so that it can handle the following signals:
+
+SIGINT
+SIGQUIT
+SIGTERM
+SIGFPE
+SIGSEGV
+SIGILL
+Your answer must include handler functions for each signal.  Each handler must print, for each signal received, the following line:
+Received signal <name>!!!
+
+where <name> is the mnemonic of the signal. 

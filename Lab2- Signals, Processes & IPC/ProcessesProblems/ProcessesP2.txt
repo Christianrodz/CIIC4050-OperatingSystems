@@ -1,0 +1,6 @@
+Using the system() function, develop a C program that downloads (using wget) this file: https://www.c-programming-simple-steps.com/support-files/return-statement.zip.
+Use the necessary flag of the wget command to hide the errors/warnings/logs from the download. Then use the ls | grep command to list the files that start with the name return
+
+Wget: https://www.geeksforgeeks.org/wget-command-in-linux-unix/#:~:text=Wget%20is%20the%20non%2Dinteractive,of%20files%20from%20the%20Web
+System: https://linux.die.net/man/3/system
+ls | grep: https://www.howtogeek.com/448446/how-to-use-the-ls-command-on-linux/

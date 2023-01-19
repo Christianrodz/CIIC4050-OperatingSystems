@@ -1,0 +1,11 @@
+Modify your producer-consumer implementation so that it uses monitors to handle race conditions instead of semaphores or mutexes. 
+
+Use the pthread library implementation
+
+
+
+Useful resources: 
+
+https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html#SYNCHRONIZATION
+
+http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html

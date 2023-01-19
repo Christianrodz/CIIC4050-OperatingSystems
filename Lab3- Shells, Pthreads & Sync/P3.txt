@@ -1,0 +1,16 @@
+Newton's Pi approximation formula can be written as:
+pi = 4 [ 1 - 1/3 + 1/5 - 1/7 + 1/9 ... +((-1)^n)/(2n+1) ]
+
+
+
+Write a C program using pthreads that calculates in parallel the nth (nth product) approximation of PI using Newton's formula, using m threads and j number of products to iterate; where each thread computes a different set of products.
+
+Compile with: gcc -o pi pi.c -lpthread
+
+Useful references: http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html
+
+Arguments: Iterations, threads.
+
+
+
+Note: Main program thread + runner threads, you are not required to use synchronization.

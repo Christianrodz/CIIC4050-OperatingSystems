@@ -1,0 +1,6 @@
+Modify your producer-consumer implementation so that it uses semaphores to handle race conditions instead of mutexes.
+
+Use the pthread library implementation.
+
+
+

@@ -1,0 +1,37 @@
+Next you must write your lottery algorithm in the indicated lines. The variable total_tcks is already defined in glo.h and it already saves the total number of tickets. Similarly, cont_wins is already defined globally and with an initial value of 0.
+
+The rand () function works in the same way as the one shared in the PDF of the guide.
+
+
+
+Example and expected resutls:
+
+Assuming that we have in the ready queue:
+
+rdy_queue[q][0]=32
+
+rdy_queue[q][1]=19
+
+rdy_queue[q][2]=18
+
+rdy_queue[q][3]=17
+
+rdy_queue[q][4]=16
+
+rdy_queue[q][5]=15
+
+(Note that the queue is already in Descending order)
+
+As the winner proccess is selected randomly, we cant predict an exact order of execution. But for testing purposes let's assume that the first process (head) always win the lottery (like rand() is always returning 1). Then the execution order should be:
+
+1)rdy_queue[q][0]=32       //count_wins=1
+
+2)rdy_queue[q][1]=19       //count_wins=2
+
+3)rdy_queue[q][2]=15       // count_wins is >= 2 we pick the process with fewer tickets to execute and we restart the counter
+
+4)rdy_queue[q][3]=18       //count_wins=1
+
+5)rdy_queue[q][4]=16       // Againcount_wins is >= 2 we pick the process with fewer tickets to execute
+
+5)rdy_queue[q][5]=17       //count_wins=1

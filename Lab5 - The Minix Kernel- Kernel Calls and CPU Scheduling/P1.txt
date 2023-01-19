@@ -1,0 +1,25 @@
+According to the instructions (Guide Lottery Scheduling) of this lab, enter below your modification of the descending enqueue algorithm.
+
+Example
+
+if this function is invoked with the following order of values of rp-> tickets:
+
+rp-> tickets=6
+
+rp-> tickets=5
+
+rp-> tickets=8
+
+rp-> tickets=7
+
+rp-> tickets=9
+
+After aplying your algorithm, the rdy queue should be in descending order as follow:
+
+rdy_head->tickets=9
+
+(rdy_head->p_nextready)->tickets=8
+
+((rdy_head->p_nextready)->p_nextready)->tickets=7
+
+((rdy_head->p_nextready)->p_nextready)->p_nextready)->tickets=6
